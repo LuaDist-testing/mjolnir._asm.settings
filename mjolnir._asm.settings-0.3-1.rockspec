@@ -10,20 +10,20 @@ package = "mjolnir._asm.settings"
 --    changing the module's source code.
 --
 --    Note: the version must match the version in the filename.
-version = "0.2-1"
+version = "0.3-1"
 
 -- General metadata:
 
-local url = "github.com/asmagill/mjolnir_asm.settings"
+local url = "github.com/asmagill/mjolnir_asm.sys"
 local desc = "Functions for user-defined settings that persist across Mjolnir launches."
 
 -- LuaDist source
 source = {
-  tag = "0.2-1",
+  tag = "0.3-1",
   url = "git://github.com/LuaDist-testing/mjolnir._asm.settings.git"
 }
 -- Original source
--- source = {url = "git://" .. url}
+-- source = {url = "git://" .. url, dir = "mjolnir_asm.sys/settings"}
 -- description = {
 --   summary = desc,
 --   detailed = desc,
@@ -36,6 +36,7 @@ source = {
 supported_platforms = {"macosx"}
 dependencies = {
   "lua >= 5.2",
+  "mjolnir._asm >= 0.1-1",
 }
 
 -- Build rules:
